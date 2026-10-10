@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1500" viewBox="0 0 1320 1500" role="img" aria-labelledby="title desc">
+<title id="title">ShopDetective system architecture</title>
+<desc id="desc">Proposed hackathon architecture: one Streamlit Python application validates orders and feedback, uses Gemini to classify messages, checks evidence and human corrections, calculates refund metrics, and renders findings with supported action suggestions. Gemini is external and session state is local to the application.</desc>
+<rect width="1320" height="1500" fill="#F5F7FC"/>
+<text x="60" y="43" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="39" font-weight="700" fill="#182944">SHOPDETECTIVE</text>
+<text x="61" y="99" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="400" fill="#566780">System architecture · Proposed hackathon MVP</text>
+<rect x="60" y="163" width="1200" height="106" rx="18" fill="#182944"/>
+<text x="90" y="183" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#FFFFFF">Shop owner · Browser</text>
+<text x="90" y="224" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="400" fill="#DAE5F6">Upload CSVs  ·  Inspect evidence  ·  Correct labels  ·  Download action plan</text>
+<rect x="60" y="310" width="885" height="1108" rx="20" fill="#ECF1F9" stroke="#D6DEEB" stroke-width="1"/>
+<text x="87" y="326" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="700" fill="#526783">STREAMLIT + PYTHON APP</text>
+<rect x="1010" y="529" width="250" height="402" rx="18" fill="#F1EBFA" stroke="#DCCEF0" stroke-width="1"/>
+<text x="1032" y="551" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#5C3D91">Gemini API</text>
+<text x="1032" y="596" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#5C3D91">1. Read messages</text>
+<text x="1032" y="625" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#5C3D91">Classify issues</text>
+<text x="1032" y="654" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#5C3D91">Return source quotes</text>
+<rect x="1032" y="707" width="205" height="1" rx="0" fill="#D9C8EB"/>
+<text x="1032" y="737" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#5C3D91">2. Read verified facts</text>
+<text x="1032" y="766" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#5C3D91">Suggest actions</text>
+<text x="1032" y="795" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#5C3D91">Reference evidence IDs</text>
+<text x="1032" y="876" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" fill="#78638C">External AI service</text>
+<rect x="160" y="382" width="660" height="112" rx="14" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="1"/>
+<rect x="160" y="382" width="7" height="112" rx="3" fill="#245BC5"/>
+<text x="187" y="399" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#182944">1  Data ingestion and validation</text>
+<text x="187" y="437" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">orders.csv + feedback.csv</text>
+<text x="187" y="464" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">Check schema, amounts, dates, IDs and item links</text>
+<rect x="160" y="541" width="660" height="112" rx="14" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="1"/>
+<rect x="160" y="541" width="7" height="112" rx="3" fill="#7751A6"/>
+<text x="187" y="558" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#182944">2  Complaint AI client</text>
+<text x="187" y="596" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">Send message IDs + text through a structured schema</text>
+<text x="187" y="623" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">Return category, detail, quote and review flag</text>
+<rect x="160" y="700" width="660" height="125" rx="14" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="1"/>
+<rect x="160" y="700" width="7" height="125" rx="3" fill="#245BC5"/>
+<text x="187" y="717" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#182944">3  Evidence checks and human review</text>
+<text x="187" y="755" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">Validate response fields and exact source quotes</text>
+<text x="187" y="782" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">Accept clear labels; hold ambiguous or conflicting cases</text>
+<rect x="160" y="901" width="660" height="125" rx="14" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="1"/>
+<rect x="160" y="901" width="7" height="125" rx="3" fill="#27796D"/>
+<text x="187" y="918" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#182944">4  Business analytics engine</text>
+<text x="187" y="956" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">Join labels to purchases by order_line_id</text>
+<text x="187" y="983" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">Deduplicate purchases; calculate refunds and rank issues</text>
+<rect x="160" y="1130" width="660" height="139" rx="14" fill="#FFFFFF" stroke="#DCE3EF" stroke-width="1"/>
+<rect x="160" y="1130" width="7" height="139" rx="3" fill="#245BC5"/>
+<text x="187" y="1147" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#182944">5  Findings, action plan and export</text>
+<text x="187" y="1185" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">Show verified metrics, source rows and customer quotes</text>
+<text x="187" y="1212" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">Validate action evidence IDs; render amounts from Python</text>
+<text x="187" y="1239" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">Download findings and suggested investigations as CSV</text>
+<polyline points="490,269 490,382" fill="none" stroke="#71829C" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="490.00,382.00 495.00,371.00 485.00,371.00" fill="#71829C"/>
+<text x="510" y="282" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" fill="#43516A">CSV uploads</text>
+<polyline points="490,494 490,541" fill="none" stroke="#71829C" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="490.00,541.00 495.00,530.00 485.00,530.00" fill="#71829C"/>
+<text x="510" y="505" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" fill="#43516A">Message records</text>
+<polyline points="490,653 490,700" fill="none" stroke="#71829C" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="490.00,700.00 495.00,689.00 485.00,689.00" fill="#71829C"/>
+<text x="510" y="663" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" fill="#43516A">Structured labels + quotes</text>
+<polyline points="490,825 490,901" fill="none" stroke="#71829C" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="490.00,901.00 495.00,890.00 485.00,890.00" fill="#71829C"/>
+<text x="510" y="852" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" fill="#43516A">Accepted / corrected labels</text>
+<polyline points="490,1026 490,1130" fill="none" stroke="#71829C" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="490.00,1130.00 495.00,1119.00 485.00,1119.00" fill="#71829C"/>
+<text x="510" y="1059" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" fill="#43516A">Verified metrics + source IDs</text>
+<polyline points="160,438 121,438 121,963 160,963" fill="none" stroke="#71829C" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="160.00,963.00 149.00,958.00 149.00,968.00" fill="#71829C"/>
+<rect x="76" y="844" width="91" height="47" rx="5" fill="#ECF1F9"/>
+<text x="86" y="848" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" fill="#526783">Orders +</text>
+<text x="86" y="870" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" fill="#526783">refunds</text>
+<polyline points="820,597 1010,597" fill="none" stroke="#7751A6" stroke-width="3" stroke-linejoin="round" stroke-dasharray="10 8"/>
+<polygon points="1010.00,597.00 999.00,592.00 999.00,602.00" fill="#7751A6"/>
+<polygon points="820.00,597.00 831.00,602.00 831.00,592.00" fill="#7751A6"/>
+<text x="840" y="553" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" fill="#7751A6">Classify text</text>
+<text x="840" y="613" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" fill="#7751A6">Labels + quotes</text>
+<polyline points="820,1213 976,1213 976,801 1010,801" fill="none" stroke="#7751A6" stroke-width="3" stroke-linejoin="round" stroke-dasharray="10 8"/>
+<polygon points="1010.00,801.00 999.00,796.00 999.00,806.00" fill="#7751A6"/>
+<polygon points="820.00,1213.00 831.00,1218.00 831.00,1208.00" fill="#7751A6"/>
+<text x="847" y="1243" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" fill="#7751A6">Verified facts ↔ actions</text>
+<polyline points="820,1167 870,1167 870,762 820,762" fill="none" stroke="#B77822" stroke-width="3" stroke-linejoin="round" stroke-dasharray="10 8"/>
+<polygon points="820.00,762.00 831.00,767.00 831.00,757.00" fill="#B77822"/>
+<rect x="832" y="1053" width="90" height="70" rx="5" fill="#ECF1F9"/>
+<text x="840" y="1059" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" fill="#97641D">Owner</text>
+<text x="840" y="1080" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" fill="#97641D">corrects</text>
+<text x="840" y="1101" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" fill="#97641D">a label</text>
+<rect x="88" y="1297" width="829" height="96" rx="12" fill="#DEE7F5"/>
+<text x="110" y="1311" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="700" fill="#243C61">Per-session state</text>
+<text x="110" y="1343" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="400" fill="#435E82">Source rows · cached predictions · corrections · report version</text>
+<text x="110" y="1368" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" fill="#526783">Cache key includes input content, model and prompt versions.</text>
+<text x="65" y="1446" text-anchor="start" dominant-baseline="text-before-edge" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="400" fill="#43516A">AI interprets language. Python calculates amounts. The owner reviews the evidence.</text>
+</svg>

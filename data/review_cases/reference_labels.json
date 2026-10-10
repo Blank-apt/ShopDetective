@@ -1,0 +1,87 @@
+{
+  "notice": "SYNTHETIC DATA. Every store, product, purchase and customer message in this folder was invented for demonstration and testing. It is not real business data. These labels are synthetic reference labels written with the data. No model was called to produce them. RM05 carries a deliberately unsupported quotation to demonstrate the evidence gate.",
+  "label_version": "review-reference-v1",
+  "feedback_digest": "6e403cd5336a61d1071f148f971f03a0e0ac97b88551db828835b43b27a1b323",
+  "labels": [
+    {
+      "message_id": "RM01",
+      "category": "unclear",
+      "detail": "mixed",
+      "evidence_quote": null,
+      "needs_review": true,
+      "review_reason": "Mentions both a fit problem and late delivery."
+    },
+    {
+      "message_id": "RM02",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "Way too tight across the shoulders",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "RM03",
+      "category": "delivery",
+      "detail": "late_delivery",
+      "evidence_quote": "Package came late",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "RM04",
+      "category": "other",
+      "detail": "quality",
+      "evidence_quote": "Zipper broke on the first day",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "RM05",
+      "category": "wrong_item",
+      "detail": "wrong_color",
+      "evidence_quote": "The jacket was the wrong color entirely",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "RM06",
+      "category": "delivery",
+      "detail": "damaged",
+      "evidence_quote": "torn seam from shipping",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "RM07",
+      "category": "unclear",
+      "detail": "other",
+      "evidence_quote": null,
+      "needs_review": true,
+      "review_reason": "Empty message."
+    },
+    {
+      "message_id": "RM08",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "RM09",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "it runs small",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "RM10",
+      "category": "unclear",
+      "detail": "other",
+      "evidence_quote": null,
+      "needs_review": true,
+      "review_reason": "No specific reason is given."
+    }
+  ]
+}

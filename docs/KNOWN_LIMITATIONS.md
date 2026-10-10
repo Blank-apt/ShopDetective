@@ -1,0 +1,21 @@
+# Known limitations
+
+- **Live AI verified with Flash-Lite only.** Live classification, live action suggestions, the live smoke test and the evaluation were run on 2026-10-06 with `gemini-3.5-flash-lite`. The smoke test and evaluation were repeated on 2026-10-09 with the same model. The default `gemini-3.5-flash` returned HTTP 503 (high demand) on 2026-10-06 and has not been exercised. If it stays unavailable, set `GEMINI_MODEL=gemini-3.5-flash-lite`.
+- **Live numbers differ from the sample fixture.** In one live run on the example store, the model sent one hoodie sizing line to review, so hoodie sizing showed INR 8,800 on 11 lines instead of the reference INR 9,600 on 12. The exact fixture figures belong to Sample demonstration mode.
+- **No real-business validation.** All data is synthetic. No user study or pilot has taken place.
+- **Evaluation labels are provisional.** The 62 evaluation labels were drafted by the coding assistant and need human review. Raw category accuracy (0.984 on the latest run) is not the accuracy of automatically accepted decisions; see `docs/EVALUATION.md` for coverage, review rate and accepted precision. The 2026-10-06 historical run has raw metrics only.
+- **Validators are safeguards, not proof.** The exact-quote check shows that the quoted text exists in the message, not that the category is semantically right. Action screening rejects digits, unseen evidence IDs and a fixed list of causal/savings phrases. A differently worded overclaim could still pass, so suggestions remain leads for the owner to judge.
+- **Association, not causation.** An issue's associated refunds are recorded refunds on purchase lines whose accepted issue matches. They are not proof of cause, lost profit or recoverable savings.
+- **One accepted issue per purchase line.** A purchase with two genuine problems has to be resolved to a primary issue by the owner.
+- **Purchase-date cohorts only.** The input has no refund date, so the date filter selects purchases, not refund timing.
+- **Line-level refunds only.** A refund cannot exceed the line's sale amount. Separately refunded delivery charges need different input modelling.
+- **Strict formats.** ISO dates (`YYYY-MM-DD`), plain decimal amounts (no thousands separators or symbols), comma-separated UTF-8 CSV. This is deliberate: no locale guessing.
+- **Two-decimal currencies only** (INR, USD, EUR, GBP), one per dataset, with no conversion. Changing the currency after validation requires validating again before the files can be used.
+- **Monetary bounds.** A single sale or refund amount may be at most 1,000,000,000,000.00, and the sale amounts in one file may total at most 10,000,000,000,000,000.00. Larger values are rejected with a validation error (never rounded or clipped), which keeps every stored amount and aggregate within exact 64-bit integer range.
+- **Display-only list filters.** The finding category and review-status filters narrow only the findings list and the findings rows in exports. Totals, charts, evidence and the action plan follow the product and date scope. The UI and export metadata (`filter_semantics`) say so.
+- **Session-only state.** Data, labels and corrections live in the browser session's server memory and are lost on restart, sleep or tab close. Download the reports. There are no accounts and no persistent database by design.
+- **Reviewer identity.** Corrections are attributed to `local_reviewer`; there is no authenticated identity.
+- **Model availability.** Gemini model names change. If the default is retired, set `GEMINI_MODEL`.
+- **Action wording.** Suggestions are rejected if they contain digits or causal/savings phrases. This keeps figures trustworthy, but it can also reject harmless wording, which then falls back to a labelled template.
+- **Cache scope.** The live prediction cache is per session only, so a new session re-classifies (and re-spends quota). **Reset everything** clears it completely, including cached quotes; ordinary reruns and retries keep it.
+- **Screenshots** were captured on 2026-10-09 from the locally running app with headless Chrome (Sample demonstration, no key). The UI is native Streamlit, and the layout may differ slightly across Streamlit versions. No screenshot shows a live run.

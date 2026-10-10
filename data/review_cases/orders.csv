@@ -1,0 +1,15 @@
+order_line_id,product_id,product_name,date,sale_amount,refund_amount
+RJ-001,R01,Rain Jacket,2026-08-02,49.99,49.99
+RJ-002,R01,Rain Jacket,2026-08-03,49.99,49.99
+RJ-003,R01,Rain Jacket,2026-08-04,49.99,49.99
+RJ-004,R01,Rain Jacket,2026-08-05,49.99,20.00
+RJ-005,R01,Rain Jacket,2026-08-06,49.99,0.00
+RJ-006,R01,Rain Jacket,2026-08-07,49.99,0.00
+RJ-007,R01,Rain Jacket,2026-08-08,49.99,0.00
+RJ-008,R01,Rain Jacket,2026-08-09,49.99,49.99
+RJ-009,R01,Rain Jacket,2026-08-10,49.99,49.99
+RJ-010,R01,Rain Jacket,2026-08-11,49.99,0.00
+GL-001,0042,Fleece Gloves,2026-08-11,15.00,0.00
+GL-002,0042,Fleece Gloves,2026-08-12,15.00,15.00
+GL-003,0042,Fleece Gloves,2026-08-13,15.00,0.00
+GL-004,0042,Fleece Gloves,2026-08-14,15.00,0.00

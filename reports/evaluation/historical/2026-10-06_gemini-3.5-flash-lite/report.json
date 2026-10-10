@@ -1,0 +1,136 @@
+{
+  "generated_at_utc": "2026-10-06T18:08:23Z",
+  "dataset": "data/evaluation/labelled_feedback.csv",
+  "n_examples": 62,
+  "label_status": "provisional_synthetic",
+  "keyword_baseline": {
+    "status": "completed",
+    "metrics": {
+      "n": 62,
+      "accuracy": 0.6129032258064516,
+      "macro_f1": 0.6254686865384805,
+      "abstention_or_review_rate": 0.3387096774193548,
+      "no_valid_prediction": 0,
+      "evidence_quote_validity": 1.0,
+      "quote_checks": 36,
+      "per_category": {
+        "sizing": {
+          "support": 12,
+          "predicted": 10,
+          "precision": 0.8,
+          "recall": 0.6666666666666666,
+          "f1": 0.7272727272727272
+        },
+        "delivery": {
+          "support": 11,
+          "predicted": 12,
+          "precision": 0.6666666666666666,
+          "recall": 0.7272727272727273,
+          "f1": 0.6956521739130435
+        },
+        "wrong_item": {
+          "support": 9,
+          "predicted": 7,
+          "precision": 0.7142857142857143,
+          "recall": 0.5555555555555556,
+          "f1": 0.6250000000000001
+        },
+        "other": {
+          "support": 9,
+          "predicted": 7,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "no_complaint": {
+          "support": 14,
+          "predicted": 5,
+          "precision": 1.0,
+          "recall": 0.35714285714285715,
+          "f1": 0.5263157894736842
+        },
+        "unclear": {
+          "support": 7,
+          "predicted": 21,
+          "precision": 0.2857142857142857,
+          "recall": 0.8571428571428571,
+          "f1": 0.42857142857142855
+        }
+      },
+      "confusion": {
+        "sizing->unclear": 4,
+        "delivery->unclear": 3,
+        "wrong_item->unclear": 4,
+        "other->unclear": 3,
+        "no_complaint->delivery": 4,
+        "no_complaint->other": 1,
+        "no_complaint->unclear": 1,
+        "no_complaint->sizing": 2,
+        "no_complaint->wrong_item": 1,
+        "unclear->wrong_item": 1
+      }
+    }
+  },
+  "live_model": {
+    "status": "completed",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "classify-v1",
+    "provider_errors": {},
+    "metrics": {
+      "n": 62,
+      "accuracy": 0.9838709677419355,
+      "macro_f1": 0.9814323607427055,
+      "abstention_or_review_rate": 0.0967741935483871,
+      "no_valid_prediction": 0,
+      "evidence_quote_validity": 1.0,
+      "quote_checks": 41,
+      "per_category": {
+        "sizing": {
+          "support": 12,
+          "predicted": 12,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "delivery": {
+          "support": 11,
+          "predicted": 11,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "wrong_item": {
+          "support": 9,
+          "predicted": 9,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "other": {
+          "support": 9,
+          "predicted": 9,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "no_complaint": {
+          "support": 14,
+          "predicted": 15,
+          "precision": 0.9333333333333333,
+          "recall": 1.0,
+          "f1": 0.9655172413793104
+        },
+        "unclear": {
+          "support": 7,
+          "predicted": 6,
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1": 0.923076923076923
+        }
+      },
+      "confusion": {
+        "unclear->no_complaint": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+message_id,category,detail,label_status,note
+M0001,sizing,too_small,synthetic_reference,
+M0002,sizing,too_small,synthetic_reference,
+M0003,sizing,too_small,synthetic_reference,
+M0004,sizing,too_large,synthetic_reference,
+M0005,sizing,too_small,synthetic_reference,
+M0006,sizing,too_small,synthetic_reference,
+M0007,sizing,too_small,synthetic_reference,
+M0008,sizing,too_large,synthetic_reference,
+M0009,sizing,too_small,synthetic_reference,
+M0010,sizing,too_small,synthetic_reference,
+M0011,sizing,too_small,synthetic_reference,
+M0012,sizing,too_small,synthetic_reference,
+M0013,sizing,too_small,synthetic_reference,duplicate message for same purchase line
+M0014,sizing,too_small,synthetic_reference,duplicate message for same purchase line
+M0015,sizing,too_small,synthetic_reference,duplicate message for same purchase line
+M0016,delivery,late_delivery,synthetic_reference,
+M0017,delivery,missing_delivery,synthetic_reference,
+M0018,delivery,late_delivery,synthetic_reference,
+M0019,delivery,late_delivery,synthetic_reference,duplicate message for same purchase line
+M0020,sizing,too_small,synthetic_reference,complaint on a zero-refund purchase
+M0021,sizing,too_small,synthetic_reference,complaint on a zero-refund purchase
+M0022,sizing,too_large,synthetic_reference,complaint on a zero-refund purchase
+M0023,no_complaint,none,synthetic_reference,
+M0024,no_complaint,none,synthetic_reference,
+M0025,no_complaint,none,synthetic_reference,
+M0026,no_complaint,none,synthetic_reference,
+M0027,no_complaint,none,synthetic_reference,
+M0028,no_complaint,none,synthetic_reference,
+M0029,no_complaint,none,synthetic_reference,
+M0030,no_complaint,none,synthetic_reference,
+M0031,no_complaint,none,synthetic_reference,
+M0032,no_complaint,none,synthetic_reference,negation: not a delivery complaint
+M0033,delivery,late_delivery,synthetic_reference,complaint on a zero-refund purchase
+M0034,sizing,too_large,synthetic_reference,
+M0035,sizing,too_small,synthetic_reference,
+M0036,sizing,too_large,synthetic_reference,
+M0037,unclear,mixed,synthetic_reference,mixed reasons -> review
+M0038,sizing,too_small,synthetic_reference,conflicting messages for one purchase line
+M0039,delivery,late_delivery,synthetic_reference,conflicting messages for one purchase line
+M0040,sizing,too_large,synthetic_reference,complaint on a zero-refund purchase
+M0041,no_complaint,none,synthetic_reference,
+M0042,no_complaint,none,synthetic_reference,
+M0043,no_complaint,none,synthetic_reference,
+M0044,no_complaint,none,synthetic_reference,
+M0045,no_complaint,none,synthetic_reference,
+M0046,wrong_item,wrong_color,synthetic_reference,
+M0047,wrong_item,wrong_color,synthetic_reference,
+M0048,wrong_item,wrong_size_sent,synthetic_reference,
+M0049,wrong_item,wrong_product,synthetic_reference,
+M0050,wrong_item,wrong_color,synthetic_reference,duplicate message for same purchase line
+M0051,other,quality,synthetic_reference,partial refund
+M0052,sizing,too_small,synthetic_reference,
+M0053,other,quality,synthetic_reference,complaint on a zero-refund purchase
+M0054,no_complaint,none,synthetic_reference,
+M0055,no_complaint,none,synthetic_reference,
+M0056,no_complaint,none,synthetic_reference,
+M0057,no_complaint,none,synthetic_reference,
+M0058,no_complaint,none,synthetic_reference,
+M0059,no_complaint,none,synthetic_reference,
+M0060,delivery,late_delivery,synthetic_reference,
+M0061,delivery,missing_delivery,synthetic_reference,
+M0062,delivery,damaged,synthetic_reference,
+M0063,delivery,late_delivery,synthetic_reference,partial refund
+M0064,delivery,missing_delivery,synthetic_reference,duplicate message for same purchase line
+M0065,other,quality,synthetic_reference,
+M0066,no_complaint,none,synthetic_reference,
+M0067,no_complaint,none,synthetic_reference,
+M0068,no_complaint,none,synthetic_reference,
+M0069,no_complaint,none,synthetic_reference,
+M0070,no_complaint,none,synthetic_reference,
+M0071,no_complaint,none,synthetic_reference,
+M0072,wrong_item,wrong_color,synthetic_reference,
+M0073,unclear,other,synthetic_reference,vague -> review
+M0074,no_complaint,none,synthetic_reference,
+M0075,no_complaint,none,synthetic_reference,
+M0076,no_complaint,none,synthetic_reference,
+M0077,no_complaint,none,synthetic_reference,
+M0078,no_complaint,none,synthetic_reference,
+M0079,no_complaint,none,synthetic_reference,

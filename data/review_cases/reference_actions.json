@@ -1,0 +1,21 @@
+{
+  "notice": "Synthetic reference investigation text for the sample demo. No model was called.",
+  "actions": {
+    "R01:sizing": {
+      "action_type": "measure_against_size_chart",
+      "recommendation": "Measure shoulder width and sleeve length on rain jackets in stock and compare them with the size chart."
+    },
+    "R01:delivery": {
+      "action_type": "check_dispatch_records",
+      "recommendation": "Check packaging and courier handling for the cited rain jacket orders."
+    },
+    "R01:wrong_item": {
+      "action_type": "audit_picking_packing",
+      "recommendation": "Review how navy and black rain jackets are labelled and picked."
+    },
+    "R01:other": {
+      "action_type": "inspect_product_quality",
+      "recommendation": "Inspect zippers on current rain jacket stock and ask the supplier about the batch."
+    }
+  }
+}

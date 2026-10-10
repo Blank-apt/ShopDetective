@@ -1,0 +1,41 @@
+{
+  "notice": "Synthetic reference investigation text for the sample demo. No model was called.",
+  "actions": {
+    "P001:sizing": {
+      "action_type": "measure_against_size_chart",
+      "recommendation": "Measure chest, body length and sleeve length on in-stock hoodies of each size and compare them with the published size chart; most cited customers describe the hoodie as smaller than expected."
+    },
+    "P001:delivery": {
+      "action_type": "check_dispatch_records",
+      "recommendation": "Pull dispatch timestamps and courier tracking for the cited hoodie orders to see whether the delays and the missing parcel share a courier, warehouse or week."
+    },
+    "P002:sizing": {
+      "action_type": "review_fit_guidance",
+      "recommendation": "Compare the jeans waist and inseam measurements with the size chart and review whether the product page explains the slim cut and length options."
+    },
+    "P003:wrong_item": {
+      "action_type": "audit_picking_packing",
+      "recommendation": "Review picking and packing records for the cited T-shirt orders and check that colour and size labels on the shelves match the listing."
+    },
+    "P003:sizing": {
+      "action_type": "measure_against_size_chart",
+      "recommendation": "Measure T-shirts of each size against the size chart and check whether the listing explains the fit."
+    },
+    "P003:other": {
+      "action_type": "inspect_product_quality",
+      "recommendation": "Inspect seams and print durability on current T-shirt stock and ask the supplier about the batch."
+    },
+    "P004:delivery": {
+      "action_type": "review_courier_performance",
+      "recommendation": "Check courier tracking, packaging and dispatch dates for the cited linen shirt orders, including the parcel that never arrived and the one damaged in transit."
+    },
+    "P004:other": {
+      "action_type": "inspect_product_quality",
+      "recommendation": "Hold a current linen shirt up to light and compare fabric weight with the supplier specification."
+    },
+    "P005:wrong_item": {
+      "action_type": "audit_picking_packing",
+      "recommendation": "Check how scarf colours are labelled in storage and whether charcoal and red stock are stored next to each other."
+    }
+  }
+}

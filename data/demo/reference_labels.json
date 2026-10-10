@@ -1,0 +1,639 @@
+{
+  "notice": "SYNTHETIC DATA. Every store, product, purchase and customer message in this folder was invented for demonstration and testing. It is not real business data. These labels are synthetic reference labels written with the data. No model was called to produce them. ",
+  "label_version": "demo-reference-v1",
+  "feedback_digest": "034a582cec5f5312059fb8e83f2eebebaef75790f14b9846d647d766d412f8c8",
+  "labels": [
+    {
+      "message_id": "M0001",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "I could barely get it over my head",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0002",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "Way too small",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0003",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "fits like a kids' size",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0004",
+      "category": "sizing",
+      "detail": "too_large",
+      "evidence_quote": "Swimming in this hoodie",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0005",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "Tight across the chest",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0006",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "runs at least two sizes small",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0007",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "the shoulders were far too narrow",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0008",
+      "category": "sizing",
+      "detail": "too_large",
+      "evidence_quote": "Much bigger than the size chart said",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0009",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "L feels like an XS",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0010",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "the body is so short and tight",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0011",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "way smaller than expected",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0012",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "Arms too short",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0013",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "it really was too small",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0014",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "it's tiny",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0015",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "I can't even get my arms in comfortably",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0016",
+      "category": "delivery",
+      "detail": "late_delivery",
+      "evidence_quote": "arrived eleven days after the promised date",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0017",
+      "category": "delivery",
+      "detail": "missing_delivery",
+      "evidence_quote": "Parcel never showed up",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0018",
+      "category": "delivery",
+      "detail": "late_delivery",
+      "evidence_quote": "Took nearly three weeks to get here",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0019",
+      "category": "delivery",
+      "detail": "late_delivery",
+      "evidence_quote": "the order came so late",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0020",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "it's snug, wish I'd sized up",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0021",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "Runs small",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0022",
+      "category": "sizing",
+      "detail": "too_large",
+      "evidence_quote": "A bit roomy in the waist",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0023",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0024",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0025",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0026",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0027",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0028",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0029",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0030",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0031",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0032",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0033",
+      "category": "delivery",
+      "detail": "late_delivery",
+      "evidence_quote": "Took ten days to arrive",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0034",
+      "category": "sizing",
+      "detail": "too_large",
+      "evidence_quote": "Waist is huge",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0035",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "Too tight around the thighs",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0036",
+      "category": "sizing",
+      "detail": "too_large",
+      "evidence_quote": "way too long",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0037",
+      "category": "unclear",
+      "detail": "mixed",
+      "evidence_quote": null,
+      "needs_review": true,
+      "review_reason": "Mentions both a fit problem and late delivery."
+    },
+    {
+      "message_id": "M0038",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "too tight to button",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0039",
+      "category": "delivery",
+      "detail": "late_delivery",
+      "evidence_quote": "arrived a week late",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0040",
+      "category": "sizing",
+      "detail": "too_large",
+      "evidence_quote": "Slightly long",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0041",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0042",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0043",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0044",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0045",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0046",
+      "category": "wrong_item",
+      "detail": "wrong_color",
+      "evidence_quote": "I ordered white but received a grey one",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0047",
+      "category": "wrong_item",
+      "detail": "wrong_color",
+      "evidence_quote": "navy shirt instead of the green",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0048",
+      "category": "wrong_item",
+      "detail": "wrong_size_sent",
+      "evidence_quote": "Sent me an XL when I ordered a small",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0049",
+      "category": "wrong_item",
+      "detail": "wrong_product",
+      "evidence_quote": "it's a different product",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0050",
+      "category": "wrong_item",
+      "detail": "wrong_color",
+      "evidence_quote": "Still the wrong colour",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0051",
+      "category": "other",
+      "detail": "quality",
+      "evidence_quote": "Seam came apart after one wash",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0052",
+      "category": "sizing",
+      "detail": "too_small",
+      "evidence_quote": "it's way too small",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0053",
+      "category": "other",
+      "detail": "quality",
+      "evidence_quote": "The print started cracking",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0054",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0055",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0056",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0057",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0058",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0059",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0060",
+      "category": "delivery",
+      "detail": "late_delivery",
+      "evidence_quote": "Arrived two weeks late",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0061",
+      "category": "delivery",
+      "detail": "missing_delivery",
+      "evidence_quote": "Never received the parcel",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0062",
+      "category": "delivery",
+      "detail": "damaged",
+      "evidence_quote": "torn in transit",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0063",
+      "category": "delivery",
+      "detail": "late_delivery",
+      "evidence_quote": "Shipping was slow",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0064",
+      "category": "delivery",
+      "detail": "missing_delivery",
+      "evidence_quote": "it never came",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0065",
+      "category": "other",
+      "detail": "quality",
+      "evidence_quote": "Fabric is see-through",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0066",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0067",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0068",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0069",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0070",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0071",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0072",
+      "category": "wrong_item",
+      "detail": "wrong_color",
+      "evidence_quote": "I ordered charcoal",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0073",
+      "category": "unclear",
+      "detail": "other",
+      "evidence_quote": null,
+      "needs_review": true,
+      "review_reason": "No specific reason is given."
+    },
+    {
+      "message_id": "M0074",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0075",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0076",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0077",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0078",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "message_id": "M0079",
+      "category": "no_complaint",
+      "detail": "none",
+      "evidence_quote": null,
+      "needs_review": false,
+      "review_reason": null
+    }
+  ]
+}

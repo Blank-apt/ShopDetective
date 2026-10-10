@@ -1,0 +1,11 @@
+message_id,category,detail,label_status,note
+RM01,unclear,mixed,synthetic_reference,mixed reasons
+RM02,sizing,too_small,synthetic_reference,conflicts with RM03 on the same purchase line
+RM03,delivery,late_delivery,synthetic_reference,conflicts with RM02 on the same purchase line
+RM04,other,quality,synthetic_reference,unknown purchase reference RJ-099; owner must link explicitly
+RM05,wrong_item,wrong_color,synthetic_reference,DELIBERATELY UNSUPPORTED QUOTE in this synthetic reference label to demonstrate the evidence gate
+RM06,delivery,damaged,synthetic_reference,
+RM07,unclear,other,synthetic_reference,empty message is never sent to a model
+RM08,no_complaint,none,synthetic_reference,negation
+RM09,sizing,too_small,synthetic_reference,instruction-like text is treated as data
+RM10,unclear,other,synthetic_reference,
